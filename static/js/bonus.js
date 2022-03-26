@@ -11,16 +11,36 @@ function gaugeChart(sample)
             {
                 domain: { x: [0, 1], y: [0, 1] },
                 value: wfreq,
-                title: { text: "Belly Button Washing Frequency" },
+                title: { 
+                    text: "Scrubs per Week",
+                    font: {
+                        size: 16
+                    } 
+                },
                 type: "indicator",
                 mode: "gauge+number",
+                number: {
+                    font: {
+                      size: 50  
+                    }
+                },
                 gauge: {
-                    axis: { range: [null, 9] }
+                    axis: { 
+                        range: [null, 9],
+                        dtick: 1,
+                        ticks: "inside" 
+                    },
+
+                    bar: {
+                        color: "#1f77b4",
+                    }
                 }
             }
         ];
         
-        var layout = { margin: { t: 0, b: 0 } };
+        var layout = { 
+            title: "<b>Belly Button Washing Frequency</b>" 
+        };
 
         Plotly.newPlot('gauge', data, layout);
         

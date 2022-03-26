@@ -1,5 +1,3 @@
-
-
 // initialize dashboard
 function initialize()
 {
@@ -71,7 +69,7 @@ function barChart(sample)
         };
 
         let layout = {
-            title: "Top 10 Belly Button Bacteria"
+            title: "<b>Top 10 Belly Button Bacteria</b>"
         };
 
         Plotly.newPlot("bar", [params], layout);
@@ -100,7 +98,7 @@ function bubbleChart(sample)
         };
 
         let layout = {
-            title: "Bacteria Cultures",
+            title: "<b>Bacteria Cultures</b>",
             hovermode: "closest",
             xaxis: {title: "OTU ID"}
         };
