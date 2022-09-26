@@ -9,4 +9,4 @@ The dataset reveals that a small handful of microbial species (also called opera
 - The main script is *app.js*
 - *bonus.js* handles the bonus objective which was to create a gauge chart
 
-The app is deployed to GitHub Pages:  https://esalgado28.github.io/plotly-challenge/
+The app is deployed to GitHub Pages:  https://esalgado28.github.io/belly-button-biodiversity-dashboard/
